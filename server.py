@@ -13,6 +13,3 @@ while True:
         print "sending back html"
         client.send(content)
     client.close()
-        
-    
-    
