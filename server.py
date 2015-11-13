@@ -1,7 +1,7 @@
 import socket, urllib, time, os
 s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-s.bind(('127.0.0.1', 443))
+s.bind(('0.0.0.0', 443))
 s.listen(5)
 while True:
     client, address = s.accept()
